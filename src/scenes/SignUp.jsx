@@ -25,33 +25,32 @@ export default function SignUp({ setUser}) {
   }
 
   return(
-    <>
-    <h2>Sign Up</h2>
-    <form onSubmit={handleSignUp}>
-      <label htmlFor="email"> Email
-        <input
-          type="email"
-          value={email}
-          onChange={(e) => {setEmail(e.target.value)}}
-        />
-       </label>
+    <section className="signup-form">
+        <h2 className="signup-h2" >Sign Up</h2>
+        <form onSubmit={handleSignUp}>
+          <label className="signup-label" htmlFor="email"> Email
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => {setEmail(e.target.value)}}
+            />
+          </label>
 
-      <br />
+          <br />
 
-      <label htmlFor="password"> Password
-        <input 
-          type="password"
-          value={password}
-          onChange={(e) => {setPassword(e.target.value)}}
-        />
-      </label>
+          <label className="signup-label" htmlFor="password"> Password
+            <input 
+              type="password"
+              value={password}
+              onChange={(e) => {setPassword(e.target.value)}}
+            />
+          </label>
+          <br />
 
-      <br />
-
-    <input type="submit" value="Sign Up" />
-    </form>
-    
-    </>
+        <input className="signup-input" type="submit" value="Sign Up" />
+        </form>
+      
+    </section>
 
   )
 }

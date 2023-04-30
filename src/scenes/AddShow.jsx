@@ -29,7 +29,7 @@ export default function AddShow({ setShows }) {
   }
 
   return(
-    <>
+    <section className="form">
     <h2>Add Show</h2>
     <form onSubmit={handleAddShow}>
       <label htmlFor="title"> Title 
@@ -64,6 +64,6 @@ export default function AddShow({ setShows }) {
 
       <input type="submit" value="Add Show" /> 
     </form>
-    </>
+    </section>
   )
 }

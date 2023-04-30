@@ -1,7 +1,71 @@
+*, *::after, *:before {
+  margin: 0;
+  padding: 0;
+};
+
 .main-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  background-image: url("../../public/images/couch.webp");
+  background-size: cover;
+  min-height: 100vh;
+  color: white;
+}
+
+.form {
+  background-image: url("../../public/images/backofcouch.avif");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.login-form {
+  background-image: url("../../public/images/backofcouch.avif");
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.signup-form {
+  border: 3px solid blue;
+  background-image: url("../../public/images/backofcouch.avif");
+  background-size: cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.login-form h2{
+  vertical-align: middle;
+}
+
+.signup-h2 {
+  border: 2px solid red;
+  font-size: 40px;
+  vertical-align: middle;
+
+}
+
+.signup-label{
+  border: 2px solid red;
+  font-size: 20px;
+  width: 300px;
+  margin-left: 50%,
+
+}
+
+.login-label {
+  border: 2px solid blue;
+  font-size: 20px;
+  width: 300px;
+  margin-left: 50%;
+  margin-top: 50%;
+}
+
+.signup-input {
+  border: 3px solid red;
+  font-size: large;
+  vertical-align: middle;
 }
 
 .show-container {
@@ -14,6 +78,8 @@
   object-fit: cover;
   aspect-ratio: 1/1;
 }
+
+
 
 /* BUTTON EFFECT */
 /******************************** */

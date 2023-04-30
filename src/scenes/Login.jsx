@@ -29,11 +29,12 @@ export default function Login({ setUser }) {
     .catch(alert)
   }
   return (
-    <>
+    <section className="login-form">
     <h2>Login</h2>
-    <form onSubmit={handleLogin}>
-      <label htmlFor="email"> Email
+    <form  onSubmit={handleLogin}>
+      <label className="login-label" htmlFor="email"> Email
         <input
+          className="input"
           type="email"
           value={email}
           onChange={(e) => {setEmail(e.target.value)}}
@@ -42,7 +43,7 @@ export default function Login({ setUser }) {
 
       <br />
 
-      <label htmlFor="password">Password
+      <label className="login-label" htmlFor="password">Password
         <input
           type="password"
           value={password}
@@ -56,6 +57,6 @@ export default function Login({ setUser }) {
 
     </form>
     
-    </>
+    </section>
   )
 }
