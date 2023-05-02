@@ -23,14 +23,15 @@ export default function Login({ setUser }) {
         alert(data.message)
         return
       }
-      setUser(data)
+      setUser(data.user);
+      localStorage.setItem("token", data.token)
       navigate('/');
     })
     .catch(alert)
   }
   return (
     <section className="login-form">
-    <h2>Login</h2>
+    <h2 className="text-center">Login</h2>
     <form  onSubmit={handleLogin}>
       <label className="login-label" htmlFor="email"> Email
         <input
